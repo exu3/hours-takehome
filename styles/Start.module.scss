@@ -1,8 +1,12 @@
+$primary: rgb(85, 199, 123);
+$primary-hover: rgba($primary, 0.7);
+$border-radius: 5px;
+
 .container {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  border-radius: 5px;
+  border-radius: $border-radius;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
   width: 20rem;
   padding: 2rem;
@@ -28,14 +32,14 @@
 .input {
   margin: 8px 8px 20px 8px;
   border: 2px solid #e5e5e5;
-  border-radius: 5px;
+  border-radius: $border-radius;
   padding: 8px 10px 8px 10px;
 }
 
 .button {
-  background-color: rgb(85, 199, 123);
+  background-color: $primary;
   border: none;
-  border-radius: 3px;
+  border-radius: $border-radius;
   cursor: pointer;
   color: white;
   padding: 5px 0px 5px 0px;
@@ -44,5 +48,5 @@
 }
 
 .button:hover {
-  background-color: rgb(70, 161, 100);
+  background-color: $primary-hover;
 }

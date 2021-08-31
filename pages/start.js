@@ -1,4 +1,5 @@
-// import { useEffect } from "react";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 import styles from "../styles/Start.module.scss";
 
 export default function Start() {
@@ -8,6 +9,8 @@ export default function Start() {
   //     // return localData ? JSON.parse(localData) : [];
   //     localStorage.setItem("username", JSON.stringify(username));
   //   }, []);
+  const router = useRouter();
+  const sessionId = Math.floor(Math.random() * Date.now());
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>Start a session</h1>
@@ -29,14 +32,14 @@ export default function Start() {
             placeholder="session title"
             required
           />
-          <input className={styles.button} type="submit" value="Start" />
+          <input
+            className={styles.button}
+            type="submit"
+            value="Start"
+            onClick={() => router.push(`/session/${sessionId}`)}
+          />
         </form>
       </div>
     </div>
   );
 }
-
-// function sessionId() {
-//   return Math.floor(Math.random() * Date.now());
-// }
-// console.log(sessionId);

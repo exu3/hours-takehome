@@ -1,0 +1,19 @@
+$primary: rgb(85, 199, 123);
+$primary-hover: rgba($primary, 0.7);
+$border-radius: 5px;
+
+.heading {
+  text-align: center;
+}
+
+.container {
+  border-radius: $border-radius;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  margin: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

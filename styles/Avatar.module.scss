@@ -1,0 +1,14 @@
+$primary: rgb(85, 199, 123);
+
+.image {
+  border-radius: 100%;
+  border: 3.5px solid $primary;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
