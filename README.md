@@ -16,3 +16,5 @@ cd hoursproject-ella
 yarn
 yarn dev
 ```
+
+The Next.js project should be accessible from localhost:3000
