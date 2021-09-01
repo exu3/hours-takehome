@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <p>Hours Takehome project</p>
+      <h1>hours</h1>
       <Link href="/start" passHref>
-        <button>Start a session</button>
+        <button className={styles.button}>Start a session</button>
       </Link>
     </div>
   );

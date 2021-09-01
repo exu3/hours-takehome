@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/Start.module.scss";
 
@@ -34,7 +34,7 @@ export default function Start() {
           />
           <input
             className={styles.button}
-            type="submit"
+            type="button"
             value="Start"
             onClick={() => router.push(`/session/${sessionId}`)}
           />
